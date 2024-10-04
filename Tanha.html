@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastry Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f3f1;
+        }
+        header {
+            background-color: #d48d59;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #d48d59;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('https://example.com/pastries.jpg'); /* Replace with an actual image link */
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero h1 {
+            font-size: 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
+        .section h2 {
+            margin-bottom: 20px;
+            color: #d48d59;
+        }
+        .pastries {
+            display: flex;
+            justify-content: space-around;
+        }
+        .pastry-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .pastry-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #d48d59;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #d48d59;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <h1>Welcome to The Pastry Shop</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#pastries">Our Pastries</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Delicious Pastries, Freshly Baked!</h1>
+    </section>
+
+    <!-- Our Pastries Section -->
+    <section class="section" id="pastries">
+        <h2>Our Best-Selling Pastries</h2>
+        <div class="pastries">
+            <div class="pastry-item">
+                <img src="https://example.com/croissant.jpg" alt="Croissant"> <!-- Replace with actual image link -->
+                <h3>Butter Croissant</h3>
+                <p>A flaky, buttery delight!</p>
+            </div>
+            <div class="pastry-item">
+                <img src="https://example.com/macaron.jpg" alt="Macaron"> <!-- Replace with actual image link -->
+                <h3>French Macaron</h3>
+                <p>Colorful, crisp, and chewy.</p>
+            </div>
+            <div class="pastry-item">
+                <img src="https://example.com/tart.jpg" alt="Fruit Tart"> <!-- Replace with actual image link -->
+                <h3>Fruit Tart</h3>
+                <p>Fresh, fruity, and light.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="section" id="about">
+        <h2>About Us</h2>
+        <p>At The Pastry Shop, we pride ourselves on crafting the finest pastries, using only the freshest ingredients. From croissants to tarts, our bakery offers a wide range of sweet treats to satisfy every craving. Visit us for a taste of France, right here in your hometown!</p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="section" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 The Pastry Shop. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
